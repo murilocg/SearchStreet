@@ -1,0 +1,84 @@
+.container-main{
+	position: relative;
+	height: 100%;
+}
+
+.container-pesquisa{
+	position:absolute;
+	top:0;
+	height: 90%;
+	width: 100%;
+	margin-top: 5%;
+	vertical-align: middle;
+	font-weight: bold;
+	font-size:30px;
+	text-align: center;
+}
+
+.container-cep-form{
+	display: inline-block;
+	vertical-align: top;
+	position:absolute;
+	top:0;
+	margin-top:80px;
+	margin-left: 35px;
+}
+
+.btn-close{
+	float: right;
+	cursor: pointer;
+}
+
+.titulo-busca{
+	color: #008C86;
+}
+
+.input-cep{
+	color:#6B3C24;
+	background-color: #ECE5DF;
+	max-width: 200px;
+	border: none;
+	padding: 10px;
+	border-radius: 30px;
+	font-size: inherit;
+	font-weight: inherit;
+	margin-top:10px;
+}
+
+.btn-go{
+	color: white;
+	background-color: #006739;
+	height: 60px;
+	width: 60px;
+	font-weight: bold;
+	font-size: 24px;
+	border-radius: 30px;
+	border:none;
+	margin-top: 10px;
+}
+
+.btn-go:hover{
+	background-color: #018248;
+	height: 62px;
+	width: 62px;
+	border: 2px solid #006739;
+}
+
+.btn-go:disabled{
+	background-color: #668778;
+	height: 60px;
+	width: 60px;
+	border: none;
+}
+
+.btn-nova-busca{
+	position:absolute;
+	right: 0;
+	bottom: 0;
+	cursor: pointer;;
+    margin: 15px 35px;
+}
+
+.btn-nova-busca:hover{
+	opacity: 0.9;
+}

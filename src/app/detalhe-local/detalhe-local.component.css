@@ -1,0 +1,36 @@
+.container-detalhe-local{
+	position:absolute;
+	left: 0;
+	bottom: 0;
+	background-color: white;
+	border: 2px solid rgba(232, 37, 78,0.6);
+	color:white;
+	font-weight: bold;
+	border-radius: 20px;
+	padding: 0px 20px 25px;
+	margin: 15px 25px;
+	text-align: center;
+}
+
+.container-detalhe-local:hover{
+	padding: 15px 20px 25px;
+	box-shadow: 1px 1px 1px #888888;
+}
+
+.container-campos{
+	position:relative;
+	top:-15px;
+}
+
+.campo-detalhe{
+	background-color: #E8254E;
+	border-radius: 5px;
+	padding: 6px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.icon-detalhe{
+	position:relative;
+	top:-20px;
+}
