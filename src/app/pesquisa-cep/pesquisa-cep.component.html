@@ -1,0 +1,22 @@
+<div class="container-main">
+	<!-- Componente do mapa -->
+	<app-mapa [lat] = "coordenadas.lat" [lng] = "coordenadas.lng"></app-mapa>
+
+	<!-- Pesquisa pelo CEP -->
+	<div *ngIf="mostrarPesquisa" class="container-pesquisa">
+			<div class="container-cep-form">
+				<span class="titulo-busca">BUSCAR CEP</span><br>
+				<form #formCep="ngForm">
+					<input class="input-cep" name="cep" [(ngModel)]="local.cep" type="text"
+					maxlength="9" minlength="9" (keyup) = "formatarCep()" placeholder="00000-000" required><br>
+					<button [disabled] = "!formCep.form.valid" (click)="pesquisarCep()" class="btn-go" type="submit">GO!</button>
+				</form>
+			</div>
+			<img src="../assets/images/iconepin-big.png">
+	</div>
+	
+	<img class="btn-nova-busca" src="../assets/images/iconeadd-small.png" *ngIf="!mostrarPesquisa" (click)="togglePesquisa()">
+
+	<app-detalhe-local [mostrarDetalhe] = "!mostrarPesquisa" [local]="local"></app-detalhe-local>
+
+</div>
